@@ -1,0 +1,1615 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cabinet Dr. F. CHIHAOUI — Chirurgien Urologue · Sidi Bel Abbès</title>
+  <meta name="description" content="Cabinet du Dr. F. CHIHAOUI, Chirurgien Urologue à Sidi Bel Abbès. Diplômé de la Faculté de Médecine d'Alger et de l'Université Jordanienne. Reins, vessie, prostate, stérilité masculine. RDV : 0560 06 60 02">
+  <meta name="keywords" content="urologue sidi bel abbes, chirurgien urologue algerie, prostate, reins, endoscopie urologique">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Cabinet Dr. F. CHIHAOUI — Chirurgien Urologue · Sidi Bel Abbès">
+  <meta property="og:description" content="Prise en charge complète des pathologies urologiques à Sidi Bel Abbès. RDV : 0560 06 60 02">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_DZ">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Cairo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalClinic",
+    "name": "Cabinet Dr. F. CHIHAOUI",
+    "description": "Cabinet de chirurgie urologique à Sidi Bel Abbès, Algérie",
+    "url": "https://dr-chihaoui.github.io",
+    "telephone": "+213560066002",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Rue Jean Jack Rousseau",
+      "addressLocality": "Sidi Bel Abbès",
+      "postalCode": "22002",
+      "addressCountry": "DZ"
+    },
+    "medicalSpecialty": "Urology",
+    "openingHoursSpecification": [
+      {"@type":"OpeningHoursSpecification","dayOfWeek":["Saturday","Sunday","Monday","Tuesday","Wednesday"],"opens":"08:30","closes":"12:00"},
+      {"@type":"OpeningHoursSpecification","dayOfWeek":["Saturday","Sunday","Monday","Tuesday","Wednesday"],"opens":"14:30","closes":"18:00"},
+      {"@type":"OpeningHoursSpecification","dayOfWeek":["Thursday"],"opens":"08:30","closes":"12:00"}
+    ],
+    "physician": {
+      "@type": "Physician",
+      "name": "Dr. F. CHIHAOUI",
+      "medicalSpecialty": "Urology",
+      "alumniOf": [
+        {"@type":"EducationalOrganization","name":"Faculté de Médecine d'Alger"},
+        {"@type":"EducationalOrganization","name":"Université Jordanienne"}
+      ]
+    }
+  }
+  </script>
+
+  <style>
+    :root {
+      --navy:       #0B1A28;
+      --navy-mid:   #102030;
+      --navy-light: #172C42;
+      --gold:       #C4954A;
+      --gold-light: #D9B478;
+      --gold-dim:   rgba(196,149,74,0.11);
+      --gold-border:rgba(196,149,74,0.22);
+      --red:        #C0392B;
+      --red-soft:   rgba(192,57,43,0.15);
+      --cream:      #F8F6F1;
+      --white:      #FFFFFF;
+      --muted:      #6B7A8D;
+      --text:       #1C2B3A;
+      --border:     rgba(13,27,42,0.07);
+      --ff-d: 'Cormorant Garamond', serif;
+      --ff-b: 'DM Sans', sans-serif;
+      --ff-a: 'Cairo', sans-serif;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: var(--ff-b);
+      background: var(--cream);
+      color: var(--text);
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+    body.ar { font-family: var(--ff-a); direction: rtl; }
+    body::after {
+      content: ''; position: fixed; inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E");
+      opacity: 0.02; pointer-events: none; z-index: 9999;
+    }
+
+    /* ─── LOADER ─── */
+    #loader {
+      position: fixed; inset: 0; z-index: 10000;
+      background: var(--navy);
+      display: flex; align-items: center; justify-content: center;
+      flex-direction: column;
+      transition: opacity .6s .1s, visibility .6s .1s;
+    }
+    #loader.done { opacity: 0; visibility: hidden; pointer-events: none; }
+    .loader-icon { margin-bottom: 1.5rem; opacity: 0; animation: fadeUp .6s .1s forwards; }
+    .loader-logo {
+      font-family: var(--ff-d); color: #fff;
+      font-size: 1.9rem; font-weight: 600; text-align: center;
+      opacity: 0; animation: fadeUp .6s .25s forwards;
+    }
+    .loader-logo em { color: var(--gold); font-style: normal; }
+    .loader-role {
+      color: rgba(196,149,74,.55); font-size: .66rem; letter-spacing: .28em;
+      text-transform: uppercase; text-align: center; margin-top: .45rem;
+      opacity: 0; animation: fadeUp .6s .38s forwards;
+    }
+    .loader-bar {
+      width: 100px; height: 1.5px; background: rgba(255,255,255,.07);
+      border-radius: 2px; margin: 1.6rem auto 0; overflow: hidden;
+      opacity: 0; animation: fadeIn .4s .5s forwards;
+    }
+    .loader-fill { height: 100%; background: var(--gold); animation: loadFill 1.1s .55s ease forwards; width: 0; }
+    @keyframes loadFill { to { width: 100%; } }
+
+    /* ─── NAV ─── */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 900;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 1.4rem 2.5rem;
+      transition: background .4s, padding .4s, box-shadow .4s;
+    }
+    nav.scrolled {
+      background: rgba(11,26,40,0.97);
+      backdrop-filter: blur(18px);
+      padding: 1rem 2.5rem;
+      box-shadow: 0 2px 40px rgba(0,0,0,.3);
+    }
+    .logo-wrap { display: flex; align-items: center; gap: .7rem; text-decoration: none; }
+    .logo-badge {
+      width: 44px; height: 44px; border-radius: 50%;
+      border: 1.5px solid rgba(196,149,74,.3);
+      background: rgba(196,149,74,.06);
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+    }
+    .logo-badge svg { width: 38px; height: 38px; }
+    .logo-info { display: flex; flex-direction: column; line-height: 1.2; }
+    .logo-name { font-family: var(--ff-d); color: #fff; font-size: 1rem; font-weight: 600; }
+    .logo-role { color: var(--gold); font-size: .62rem; letter-spacing: .15em; text-transform: uppercase; font-weight: 400; }
+    .nav-links { display: flex; align-items: center; gap: 2.2rem; list-style: none; }
+    .nav-links a { color: rgba(255,255,255,.7); text-decoration: none; font-size: .83rem; letter-spacing: .04em; transition: color .25s; }
+    .nav-links a:hover { color: var(--gold); }
+    .nav-actions { display: flex; align-items: center; gap: .8rem; }
+    .btn-lang {
+      background: transparent; border: 1px solid var(--gold-border);
+      color: var(--gold); padding: .28rem .85rem; border-radius: 2rem;
+      font-size: .71rem; letter-spacing: .1em; cursor: pointer;
+      font-family: var(--ff-b); transition: all .25s;
+    }
+    .btn-lang:hover { background: var(--gold); color: var(--navy); }
+    .btn-nav-rdv {
+      background: var(--gold); color: var(--navy); border: none;
+      padding: .52rem 1.25rem; border-radius: 2rem;
+      font-size: .8rem; font-weight: 600; cursor: pointer;
+      font-family: var(--ff-b); text-decoration: none;
+      transition: all .25s; white-space: nowrap;
+    }
+    .btn-nav-rdv:hover { background: var(--gold-light); transform: translateY(-1px); box-shadow: 0 6px 20px rgba(196,149,74,.35); }
+    .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; }
+    .hamburger span { display: block; width: 22px; height: 2px; background: #fff; border-radius: 2px; transition: .3s; }
+
+    /* ─── HERO ─── */
+    .hero {
+      min-height: 100vh; background: var(--navy);
+      display: flex; align-items: center;
+      position: relative; overflow: hidden;
+    }
+    .hero-bg {
+      position: absolute; inset: 0;
+      background:
+        radial-gradient(ellipse 65% 55% at 70% 50%, rgba(196,149,74,.08) 0%, transparent 62%),
+        radial-gradient(ellipse 35% 60% at 4% 88%, rgba(192,57,43,.04) 0%, transparent 55%),
+        linear-gradient(148deg, #08131d 0%, #0B1A28 55%, #0e1f30 100%);
+    }
+    .hero-deco {
+      position: absolute; right: -60px; top: 50%;
+      transform: translateY(-50%); pointer-events: none;
+      opacity: .055;
+    }
+    .hero-vline {
+      position: absolute; left: 0; top: 0; bottom: 0; width: 3px;
+      background: linear-gradient(to bottom, transparent, var(--gold) 35%, var(--gold) 65%, transparent);
+      opacity: .22;
+    }
+    .hero-hline {
+      position: absolute; left: 0; right: 0; bottom: 0; height: 1px;
+      background: linear-gradient(to right, transparent, rgba(196,149,74,.28), transparent);
+    }
+    .hero-inner {
+      position: relative; z-index: 2; width: 100%; max-width: 1200px;
+      margin: 0 auto; padding: 9rem 2.5rem 5rem;
+      display: grid; grid-template-columns: 1fr 400px; gap: 4rem; align-items: center;
+      box-sizing: border-box;
+    }
+    .hero-pill {
+      display: inline-flex; align-items: center; gap: .5rem;
+      background: rgba(196,149,74,.09); border: 1px solid rgba(196,149,74,.24);
+      color: var(--gold); font-size: .67rem; font-weight: 500;
+      letter-spacing: .2em; text-transform: uppercase;
+      padding: .34rem 1rem; border-radius: 2rem; margin-bottom: 1.5rem;
+      opacity: 0; animation: fadeUp .8s .1s forwards;
+    }
+    .hero-pill::before { content: ''; width: 5px; height: 5px; background: var(--gold); border-radius: 50%; }
+    .hero-h1 {
+      font-family: var(--ff-d); color: #fff;
+      font-size: clamp(2rem, 8vw, 4.2rem); font-weight: 600; line-height: 1.04;
+      margin-bottom: .4rem;
+      opacity: 0; animation: fadeUp .8s .24s forwards;
+    }
+    .hero-h1 .hi { color: var(--red); }
+    .hero-h1 .hs { color: var(--gold-light); }
+    .hero-title {
+      font-family: var(--ff-d); font-style: italic;
+      color: rgba(255,255,255,.48); font-size: clamp(1rem,2vw,1.25rem);
+      margin-bottom: 1rem;
+      opacity: 0; animation: fadeUp .8s .36s forwards;
+    }
+    .hero-dips {
+      display: flex; flex-direction: column; gap: .38rem;
+      margin-bottom: 1.8rem;
+      opacity: 0; animation: fadeUp .8s .44s forwards;
+    }
+    .dip-line {
+      display: flex; align-items: center; gap: .6rem;
+      color: rgba(255,255,255,.38); font-size: .78rem;
+    }
+    .dip-line::before { content: ''; width: 14px; height: 1px; background: var(--gold); flex-shrink: 0; }
+    body.ar .dip-line::before { display: none; }
+    body.ar .dip-line::after  { content: ''; width: 14px; height: 1px; background: var(--gold); flex-shrink: 0; }
+    .hero-desc {
+      color: rgba(255,255,255,.45); font-size: .9rem; line-height: 1.9;
+      max-width: 520px; margin-bottom: 2rem;
+      opacity: 0; animation: fadeUp .8s .52s forwards;
+    }
+    .hero-btns {
+      display: flex; gap: .85rem; flex-wrap: wrap;
+      opacity: 0; animation: fadeUp .8s .6s forwards;
+    }
+    .btn-p {
+      display: inline-flex; align-items: center; gap: .45rem;
+      background: var(--gold); color: var(--navy); border: none;
+      padding: .88rem 1.8rem; border-radius: 3rem;
+      font-size: .86rem; font-weight: 600; cursor: pointer;
+      font-family: var(--ff-b); text-decoration: none;
+      transition: all .3s;
+    }
+    .btn-p:hover { background: var(--gold-light); transform: translateY(-2px); box-shadow: 0 10px 28px rgba(196,149,74,.38); }
+    .btn-wa {
+      display: inline-flex; align-items: center; gap: .45rem;
+      background: #25D366; color: #fff; border: none;
+      padding: .88rem 1.8rem; border-radius: 3rem;
+      font-size: .86rem; font-weight: 600; cursor: pointer;
+      font-family: var(--ff-b); text-decoration: none;
+      transition: all .3s;
+    }
+    .btn-wa:hover { background: #20ba5a; transform: translateY(-2px); box-shadow: 0 10px 28px rgba(37,211,102,.28); }
+    .btn-o {
+      display: inline-flex; align-items: center;
+      background: transparent; color: rgba(255,255,255,.8);
+      border: 1px solid rgba(255,255,255,.16);
+      padding: .88rem 1.8rem; border-radius: 3rem;
+      font-size: .86rem; font-family: var(--ff-b); text-decoration: none;
+      transition: all .3s;
+    }
+    .btn-o:hover { border-color: var(--gold); color: var(--gold); }
+    .hero-stats {
+      display: flex; gap: 2.5rem; margin-top: 2.5rem;
+      padding-top: 2rem; border-top: 1px solid rgba(255,255,255,.06);
+      opacity: 0; animation: fadeUp .8s .68s forwards;
+    }
+    .stat-n { font-family: var(--ff-d); color: var(--gold); font-size: 2.2rem; font-weight: 700; line-height: 1; }
+    .stat-l { color: rgba(255,255,255,.32); font-size: .69rem; margin-top: .2rem; letter-spacing: .06em; }
+
+    /* hero card */
+    .hero-card-w { opacity: 0; animation: fadeIn 1.1s .44s forwards; }
+    .hero-card {
+      background: rgba(255,255,255,.034);
+      border: 1px solid rgba(196,149,74,.2);
+      border-radius: 1.5rem; padding: 2rem;
+      backdrop-filter: blur(14px);
+    }
+    .c-head {
+      display: flex; align-items: center; gap: 1rem;
+      padding-bottom: 1.4rem; margin-bottom: 1.4rem;
+      border-bottom: 1px solid rgba(255,255,255,.06);
+    }
+    .c-avatar {
+      width: 56px; height: 56px; border-radius: 50%; flex-shrink: 0;
+      background: var(--navy); border: 1.5px solid rgba(196,149,74,.3);
+      display: flex; align-items: center; justify-content: center;
+    }
+    .c-name { color: #fff; font-weight: 600; font-size: .91rem; }
+    .c-spec { color: var(--gold); font-size: .69rem; margin-top: .18rem; }
+    .c-row {
+      display: flex; align-items: flex-start; gap: .8rem;
+      margin-bottom: .88rem; color: rgba(255,255,255,.6);
+      font-size: .81rem; line-height: 1.5;
+    }
+    .c-row:last-child { margin-bottom: 0; }
+    .c-ico {
+      width: 30px; height: 30px; flex-shrink: 0;
+      background: var(--gold-dim); border-radius: 8px;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .c-ico svg { width: 14px; height: 14px; stroke: var(--gold); fill: none; stroke-width: 1.9; stroke-linecap: round; stroke-linejoin: round; }
+    .c-status {
+      margin-top: 1.3rem; padding-top: 1.2rem;
+      border-top: 1px solid rgba(255,255,255,.06);
+      display: flex; align-items: center; gap: .5rem;
+    }
+    .s-dot { width: 8px; height: 8px; border-radius: 50%; background: #4ade80; box-shadow: 0 0 0 3px rgba(74,222,128,.18); animation: pulse 2s infinite; }
+    .s-txt { color: rgba(255,255,255,.42); font-size: .76rem; }
+
+    /* ─── TRUST BAR ─── */
+    .trust-bar {
+      background: var(--navy-mid);
+      border-top: 1px solid rgba(196,149,74,.1);
+      border-bottom: 1px solid rgba(196,149,74,.1);
+      padding: 1.5rem 2.5rem;
+    }
+    .trust-inner {
+      max-width: 1200px; margin: 0 auto;
+      display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; flex-wrap: wrap;
+    }
+    .trust-item { display: flex; align-items: center; gap: .7rem; color: rgba(255,255,255,.55); font-size: .8rem; }
+    .trust-item svg { width: 17px; height: 17px; stroke: var(--gold); fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; flex-shrink: 0; }
+    .trust-div { width: 1px; height: 22px; background: rgba(255,255,255,.08); }
+
+    /* ─── SECTIONS ─── */
+    section { padding: 6rem 2.5rem; }
+    .container { max-width: 1200px; margin: 0 auto; }
+    .sec-tag {
+      display: inline-flex; align-items: center; gap: .55rem;
+      color: var(--gold); font-size: .66rem; font-weight: 500;
+      letter-spacing: .22em; text-transform: uppercase; margin-bottom: .75rem;
+    }
+    .sec-tag::before { content: ''; width: 20px; height: 1px; background: var(--gold); }
+    body.ar .sec-tag::before { display: none; }
+    body.ar .sec-tag::after  { content: ''; width: 20px; height: 1px; background: var(--gold); }
+    .sec-h2 {
+      font-family: var(--ff-d); font-size: clamp(2rem,4vw,2.9rem);
+      font-weight: 600; line-height: 1.14; margin-bottom: .85rem; color: var(--text);
+    }
+    .sec-sub { color: var(--muted); font-size: .9rem; line-height: 1.87; max-width: 520px; }
+
+    /* ─── JOURNEY ─── */
+    .journey-sec { background: var(--navy); position: relative; overflow: hidden; }
+    .journey-sec::before {
+      content: ''; position: absolute; inset: 0;
+      background: radial-gradient(ellipse 60% 70% at 50% 50%, rgba(196,149,74,.04), transparent 70%);
+      pointer-events: none;
+    }
+    .journey-sec .sec-h2 { color: #fff; }
+    .journey-sec .sec-tag { margin-bottom: .75rem; }
+    .journey-head { text-align: center; margin-bottom: 3.5rem; }
+    .journey-head .sec-tag { justify-content: center; }
+    .journey-head .sec-tag::before { display: none; }
+    .journey-head .sec-tag::after { content: ''; width: 20px; height: 1px; background: var(--gold); }
+    .journey-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 1.5rem; position: relative; }
+    .journey-grid::before {
+      content: ''; position: absolute; top: 2.6rem; left: calc(33.33% + 1.5rem);
+      width: calc(33.33% - 3rem); height: 1px;
+      background: linear-gradient(to right, rgba(196,149,74,.3), rgba(196,149,74,.3));
+    }
+    .journey-grid::after {
+      content: ''; position: absolute; top: 2.6rem; right: calc(33.33% + 1.5rem);
+      width: calc(33.33% - 3rem); height: 1px;
+      background: linear-gradient(to right, rgba(196,149,74,.3), rgba(196,149,74,.3));
+    }
+    body.ar .journey-grid::before,
+    body.ar .journey-grid::after { display: none; }
+    .journey-step {
+      background: rgba(255,255,255,.03);
+      border: 1px solid rgba(196,149,74,.15);
+      border-radius: 1.3rem; padding: 2.2rem 1.8rem;
+      text-align: center; position: relative;
+      transition: border-color .3s, background .3s, transform .3s;
+    }
+    .journey-step:hover { border-color: rgba(196,149,74,.35); background: rgba(255,255,255,.05); transform: translateY(-4px); }
+    .step-num {
+      font-family: var(--ff-d); font-size: 4rem; font-weight: 700; line-height: 1;
+      color: rgba(196,149,74,.12); position: absolute; top: 1.2rem; right: 1.5rem;
+      pointer-events: none;
+    }
+    body.ar .step-num { right: auto; left: 1.5rem; }
+    .step-ico {
+      width: 54px; height: 54px; border-radius: 50%;
+      background: var(--gold-dim); border: 1px solid var(--gold-border);
+      display: flex; align-items: center; justify-content: center;
+      margin: 0 auto 1.2rem;
+    }
+    .step-ico svg { width: 22px; height: 22px; stroke: var(--gold); fill: none; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
+    .step-title { color: #fff; font-size: 1.05rem; font-weight: 600; margin-bottom: .6rem; }
+    .step-body { color: rgba(255,255,255,.42); font-size: .82rem; line-height: 1.82; }
+
+    /* ─── SERVICES ─── */
+    .services { background: var(--cream); }
+    .svc-head { margin-bottom: 3.5rem; }
+    .svc-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 1.35rem; }
+    .svc-card {
+      background: var(--white); border: 1px solid var(--border);
+      border-radius: 1.2rem; padding: 2rem 1.8rem;
+      position: relative; overflow: hidden;
+      transition: transform .35s, box-shadow .35s, border-color .35s;
+    }
+    .svc-card::after {
+      content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+      background: linear-gradient(90deg, var(--gold), var(--gold-light));
+      transform: scaleX(0); transform-origin: left; transition: transform .4s;
+    }
+    body.ar .svc-card::after { transform-origin: right; }
+    .svc-card:hover { transform: translateY(-5px); box-shadow: 0 18px 48px rgba(13,27,42,.09); border-color: var(--gold-border); }
+    .svc-card:hover::after { transform: scaleX(1); }
+    .svc-ico {
+      width: 52px; height: 52px; background: var(--gold-dim);
+      border-radius: 13px; display: flex; align-items: center;
+      justify-content: center; margin-bottom: 1.2rem;
+    }
+    .svc-ico svg { width: 24px; height: 24px; stroke: var(--gold); fill: none; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
+    .svc-n { font-family: var(--ff-d); font-size: 1.1rem; font-weight: 600; color: var(--navy); margin-bottom: .5rem; }
+    .svc-d { color: var(--muted); font-size: .82rem; line-height: 1.76; }
+
+    /* ─── WHY US BAND ─── */
+    .why-band {
+      background: var(--navy-mid);
+      border-top: 1px solid rgba(196,149,74,.08);
+      border-bottom: 1px solid rgba(196,149,74,.08);
+      padding: 3rem 2.5rem;
+    }
+    .why-inner {
+      max-width: 1200px; margin: 0 auto;
+      display: grid; grid-template-columns: repeat(4,1fr); gap: 1.5rem;
+    }
+    .why-item {
+      display: flex; flex-direction: column; align-items: center; text-align: center;
+      padding: 1.5rem 1rem; border-radius: 1rem;
+      border: 1px solid rgba(196,149,74,.1);
+      background: rgba(255,255,255,.02);
+      transition: border-color .3s, background .3s;
+    }
+    .why-item:hover { border-color: rgba(196,149,74,.3); background: rgba(255,255,255,.04); }
+    .why-ico {
+      width: 46px; height: 46px; border-radius: 12px;
+      background: var(--gold-dim); border: 1px solid var(--gold-border);
+      display: flex; align-items: center; justify-content: center; margin-bottom: 1rem;
+    }
+    .why-ico svg { width: 20px; height: 20px; stroke: var(--gold); fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+    .why-title { color: #fff; font-size: .88rem; font-weight: 600; margin-bottom: .38rem; }
+    .why-sub { color: rgba(255,255,255,.38); font-size: .75rem; line-height: 1.65; }
+
+    /* ─── ABOUT ─── */
+    .about { background: var(--navy); position: relative; overflow: hidden; }
+    .about::before {
+      content: ''; position: absolute; top: -100px; right: -150px;
+      width: 500px; height: 500px; border-radius: 50%;
+      background: radial-gradient(circle, rgba(196,149,74,.04) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: start; }
+    .about .sec-h2 { color: #fff; }
+    .about-body p { color: rgba(255,255,255,.48); font-size: .9rem; line-height: 1.95; margin-bottom: 1.5rem; }
+    .dip-section { margin-top: 2rem; }
+    .dip-title {
+      color: var(--gold); font-size: .64rem; font-weight: 500;
+      letter-spacing: .2em; text-transform: uppercase;
+      margin-bottom: 1rem;
+      display: flex; align-items: center; gap: .5rem;
+    }
+    .dip-title::after { content: ''; flex: 1; height: 1px; background: rgba(196,149,74,.18); }
+    body.ar .dip-title::after { display: none; }
+    body.ar .dip-title::before { content: ''; flex: 1; height: 1px; background: rgba(196,149,74,.18); }
+    .dip-card {
+      display: flex; align-items: center; gap: 1rem;
+      background: rgba(255,255,255,.03);
+      border: 1px solid rgba(196,149,74,.14);
+      border-radius: .9rem; padding: 1rem 1.2rem; margin-bottom: .7rem;
+      transition: border-color .3s, background .3s;
+    }
+    .dip-card:hover { border-color: rgba(196,149,74,.32); background: rgba(255,255,255,.05); }
+    .dip-icon {
+      width: 38px; height: 38px; background: var(--gold-dim);
+      border-radius: 10px; display: flex; align-items: center;
+      justify-content: center; flex-shrink: 0;
+    }
+    .dip-icon svg { width: 18px; height: 18px; stroke: var(--gold); fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+    .dip-info { flex: 1; }
+    .dip-nm { color: rgba(255,255,255,.82); font-size: .84rem; font-weight: 500; }
+    .dip-dt { color: rgba(255,255,255,.32); font-size: .73rem; margin-top: .15rem; }
+    .creds { display: flex; flex-direction: column; gap: .8rem; }
+    .cred-item {
+      display: flex; align-items: center; gap: .9rem;
+      background: rgba(255,255,255,.03);
+      border: 1px solid var(--gold-border);
+      border-radius: .85rem; padding: .95rem 1.2rem;
+      transition: background .3s;
+    }
+    .cred-item:hover { background: rgba(255,255,255,.05); }
+    .cred-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--gold); flex-shrink: 0; }
+    .cred-txt { color: rgba(255,255,255,.65); font-size: .84rem; }
+
+    /* ─── TESTIMONIALS ─── */
+    .testimonials-sec { background: var(--cream); }
+    .testi-head { margin-bottom: 3rem; }
+    .testi-note { color: var(--muted); font-size: .75rem; font-style: italic; margin-top: .5rem; margin-bottom: 2.5rem; }
+    .testi-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 1.5rem; }
+    .testi-card {
+      background: var(--white); border: 1px solid var(--border);
+      border-radius: 1.3rem; padding: 2rem;
+      transition: transform .3s, box-shadow .3s, border-color .3s;
+      position: relative;
+    }
+    .testi-card:hover { transform: translateY(-4px); box-shadow: 0 16px 40px rgba(13,27,42,.08); border-color: var(--gold-border); }
+    .testi-quote-mark {
+      font-family: var(--ff-d); font-size: 4.5rem; line-height: .6;
+      color: rgba(196,149,74,.15); font-weight: 700; margin-bottom: .8rem;
+      display: block;
+    }
+    .testi-stars { color: var(--gold); font-size: .88rem; letter-spacing: .12em; margin-bottom: 1rem; }
+    .testi-quote { color: var(--text); font-size: .88rem; line-height: 1.78; margin-bottom: 1.5rem; font-style: italic; }
+    .testi-author { display: flex; align-items: center; gap: .85rem; padding-top: 1.2rem; border-top: 1px solid var(--border); }
+    .testi-avatar {
+      width: 38px; height: 38px; border-radius: 50%; flex-shrink: 0;
+      background: var(--gold-dim); border: 1px solid var(--gold-border);
+      display: flex; align-items: center; justify-content: center;
+      font-size: .72rem; font-weight: 700; color: var(--gold);
+    }
+    .testi-name { color: var(--text); font-size: .84rem; font-weight: 600; }
+    .testi-city { color: var(--muted); font-size: .72rem; margin-top: .1rem; }
+
+    /* ─── FAQ ─── */
+    .faq-sec { background: var(--white); }
+    .faq-grid { display: grid; grid-template-columns: 1fr 1.6fr; gap: 5rem; align-items: start; }
+    .faq-left { position: sticky; top: 7rem; }
+    .faq-left .sec-sub { margin-top: .5rem; }
+    .faq-cta-block { margin-top: 2rem; }
+    .faq-cta-block p { color: var(--muted); font-size: .83rem; margin-bottom: 1rem; line-height: 1.65; }
+    .btn-faq-call {
+      display: inline-flex; align-items: center; gap: .5rem;
+      background: var(--gold); color: var(--navy);
+      padding: .78rem 1.5rem; border-radius: 3rem;
+      font-size: .84rem; font-weight: 600; text-decoration: none;
+      font-family: var(--ff-b); transition: all .25s;
+    }
+    .btn-faq-call:hover { background: var(--gold-light); transform: translateY(-1px); box-shadow: 0 8px 22px rgba(196,149,74,.32); }
+    .faq-list { display: flex; flex-direction: column; gap: .6rem; }
+    .faq-item {
+      border: 1px solid var(--border); border-radius: 1rem;
+      overflow: hidden; transition: border-color .3s;
+    }
+    .faq-item.open { border-color: var(--gold-border); }
+    .faq-q {
+      width: 100%; text-align: left; background: transparent; border: none;
+      padding: 1.2rem 1.5rem; cursor: pointer;
+      font-family: var(--ff-b); font-size: .9rem; font-weight: 500;
+      color: var(--text); display: flex; align-items: center; justify-content: space-between;
+      gap: 1rem; transition: color .2s;
+    }
+    body.ar .faq-q { text-align: right; font-family: var(--ff-a); }
+    .faq-item.open .faq-q { color: var(--gold); }
+    .faq-q-icon {
+      width: 22px; height: 22px; flex-shrink: 0; border-radius: 50%;
+      background: var(--gold-dim); border: 1px solid var(--gold-border);
+      display: flex; align-items: center; justify-content: center;
+      transition: transform .3s, background .3s;
+    }
+    .faq-q-icon svg { width: 10px; height: 10px; stroke: var(--gold); fill: none; stroke-width: 2.5; stroke-linecap: round; }
+    .faq-item.open .faq-q-icon { transform: rotate(45deg); background: var(--gold); }
+    .faq-item.open .faq-q-icon svg { stroke: var(--navy); }
+    .faq-a {
+      max-height: 0; overflow: hidden;
+      transition: max-height .4s ease, padding .4s ease;
+    }
+    .faq-item.open .faq-a { max-height: 200px; }
+    .faq-a-inner {
+      padding: 0 1.5rem 1.3rem;
+      color: var(--muted); font-size: .85rem; line-height: 1.78;
+      border-top: 1px solid rgba(13,27,42,.04);
+      padding-top: .9rem;
+    }
+
+    /* ─── CONTACT ─── */
+    .contact-sec { background: var(--cream); }
+    .contact-grid { display: grid; grid-template-columns: 1.3fr .7fr; gap: 2.5rem; }
+    .hours-box {
+      background: var(--white); border: 1px solid var(--border);
+      border-radius: 1.2rem; padding: 2rem;
+    }
+    .hours-ttl {
+      font-family: var(--ff-d); font-size: 1.18rem; font-weight: 600;
+      color: var(--navy); padding-bottom: 1.2rem; margin-bottom: .8rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .hr-row {
+      display: grid; grid-template-columns: 110px 1fr; align-items: center;
+      padding: .6rem 0; border-bottom: 1px solid rgba(13,27,42,.04);
+    }
+    .hr-row:last-child { border-bottom: none; }
+    .hr-day { font-size: .83rem; color: var(--text); font-weight: 500; }
+    .hr-slots { display: flex; flex-direction: column; gap: .22rem; }
+    .hr-slot {
+      display: inline-flex; align-items: center;
+      font-size: .75rem; font-weight: 500;
+      padding: .16rem .62rem; border-radius: 2rem; width: fit-content;
+    }
+    .hr-slot.am { background: rgba(13,27,42,.06); border: 1px solid rgba(13,27,42,.12); color: var(--text); }
+    .hr-slot.pm { background: var(--gold-dim); border: 1px solid rgba(196,149,74,.2); color: #7a5c1e; }
+    .hr-closed { color: #bbb; font-size: .79rem; font-style: italic; }
+    .info-col { display: flex; flex-direction: column; gap: 1rem; }
+    .info-card {
+      display: flex; align-items: flex-start; gap: 1rem;
+      background: var(--white); border: 1px solid var(--border);
+      border-radius: 1rem; padding: 1.15rem;
+      transition: border-color .3s, box-shadow .3s;
+    }
+    .info-card:hover { border-color: var(--gold-border); box-shadow: 0 8px 24px rgba(13,27,42,.06); }
+    .info-ico {
+      width: 38px; height: 38px; background: var(--gold-dim);
+      border-radius: 10px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+    }
+    .info-ico svg { width: 17px; height: 17px; stroke: var(--gold); fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+    .info-lbl { color: var(--muted); font-size: .69rem; text-transform: uppercase; letter-spacing: .1em; margin-bottom: .28rem; }
+    .info-val { color: var(--text); font-size: .86rem; font-weight: 500; line-height: 1.5; }
+    .info-val a { color: var(--text); text-decoration: none; }
+    .info-val a:hover { color: var(--gold); }
+    .btn-call-full {
+      display: flex; align-items: center; justify-content: center; gap: .5rem;
+      background: var(--gold); color: var(--navy); border: none;
+      padding: .95rem; border-radius: .9rem; font-size: .88rem; font-weight: 600;
+      cursor: pointer; font-family: var(--ff-b); text-decoration: none;
+      transition: all .25s; width: 100%;
+    }
+    .btn-call-full:hover { background: var(--gold-light); box-shadow: 0 10px 28px rgba(196,149,74,.35); transform: translateY(-1px); }
+    .btn-call-full svg, .btn-wa-full svg { width: 17px; height: 17px; flex-shrink: 0; }
+    .btn-wa-full {
+      display: flex; align-items: center; justify-content: center; gap: .5rem;
+      background: #25D366; color: #fff; border: none;
+      padding: .88rem; border-radius: .9rem; font-size: .86rem; font-weight: 600;
+      cursor: pointer; font-family: var(--ff-b); text-decoration: none;
+      transition: all .25s; width: 100%;
+    }
+    .btn-wa-full:hover { background: #20ba5a; box-shadow: 0 8px 24px rgba(37,211,102,.28); }
+
+    /* ─── FOOTER ─── */
+    footer { background: var(--navy); border-top: 1px solid rgba(196,149,74,.1); padding: 2.5rem; }
+    .foot-inner {
+      max-width: 1200px; margin: 0 auto;
+      display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1.5rem;
+    }
+    .foot-brand { font-family: var(--ff-d); color: #fff; font-size: 1rem; font-weight: 600; }
+    .foot-brand em { color: var(--gold); font-style: normal; }
+    .foot-sub { display: block; color: rgba(255,255,255,.3); font-family: var(--ff-d); font-style: italic; font-size: .72rem; margin-top: .12rem; }
+    .foot-links { display: flex; gap: 2rem; list-style: none; }
+    .foot-links a { color: rgba(255,255,255,.38); text-decoration: none; font-size: .8rem; transition: color .2s; }
+    .foot-links a:hover { color: var(--gold); }
+    .foot-copy { color: rgba(255,255,255,.22); font-size: .74rem; }
+    .foot-dev { color: rgba(255,255,255,.16); font-size: .68rem; margin-top: .2rem; }
+
+    /* ─── SCROLL TOP ─── */
+    #scrollTop {
+      position: fixed; bottom: 6rem; right: 2rem;
+      width: 42px; height: 42px; border-radius: 50%;
+      background: var(--gold); color: var(--navy); border: none;
+      display: flex; align-items: center; justify-content: center;
+      cursor: pointer; opacity: 0; pointer-events: none;
+      transform: translateY(10px); transition: all .3s; z-index: 800;
+      box-shadow: 0 4px 16px rgba(196,149,74,.4);
+    }
+    #scrollTop.vis { opacity: 1; pointer-events: all; transform: translateY(0); }
+    #scrollTop:hover { background: var(--gold-light); transform: translateY(-2px); }
+    #scrollTop svg { width: 18px; height: 18px; stroke: currentColor; fill: none; stroke-width: 2.5; stroke-linecap: round; }
+
+    /* ─── FLOATING WA ─── */
+    #wa-float {
+      position: fixed; bottom: 2rem; right: 2rem;
+      width: 54px; height: 54px; border-radius: 50%;
+      background: #25D366; color: #fff; border: none;
+      display: flex; align-items: center; justify-content: center;
+      cursor: pointer; z-index: 799;
+      box-shadow: 0 6px 24px rgba(37,211,102,.45);
+      text-decoration: none;
+      transition: transform .25s, box-shadow .25s;
+      animation: waPulse 2.5s ease-in-out infinite;
+    }
+    #wa-float:hover { transform: scale(1.1); box-shadow: 0 10px 32px rgba(37,211,102,.6); animation: none; }
+    #wa-float svg { width: 26px; height: 26px; fill: #fff; }
+    @keyframes waPulse {
+      0%,100% { box-shadow: 0 6px 24px rgba(37,211,102,.45), 0 0 0 0 rgba(37,211,102,.3); }
+      50%      { box-shadow: 0 6px 24px rgba(37,211,102,.45), 0 0 0 10px rgba(37,211,102,0); }
+    }
+
+    /* ─── REVEAL ─── */
+    .reveal { opacity: 0; transform: translateY(26px); transition: opacity .65s ease, transform .65s ease; }
+    .reveal.vis { opacity: 1; transform: none; }
+    .rd1 { transition-delay: .1s; } .rd2 { transition-delay: .2s; } .rd3 { transition-delay: .3s; }
+
+    /* ─── KEYFRAMES ─── */
+    @keyframes fadeUp { from { opacity:0; transform:translateY(22px); } to { opacity:1; transform:none; } }
+    @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+    @keyframes pulse { 0%,100% { box-shadow: 0 0 0 3px rgba(74,222,128,.18); } 50% { box-shadow: 0 0 0 6px rgba(74,222,128,.07); } }
+
+    /* ─── RESPONSIVE ─── */
+    @media (max-width: 900px) {
+      .trust-div { display: none; }
+      .trust-inner { justify-content: flex-start; gap: 1.2rem; }
+      .why-inner { grid-template-columns: repeat(2,1fr); }
+      .testi-grid { grid-template-columns: 1fr 1fr; }
+      .faq-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+      .faq-left { position: static; }
+    }
+    @media (max-width: 768px) {
+      .container, section, main {
+        padding-left: 16px !important;
+        padding-right: 16px !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
+      }
+      .hamburger { display: flex; }
+      .nav-links {
+        position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+        background: var(--navy); flex-direction: column; justify-content: center;
+        gap: 2.5rem; padding: 2rem; transform: translateX(100%);
+        transition: transform .35s ease; pointer-events: none; z-index: 800;
+      }
+      .nav-links.open { transform: translateX(0); pointer-events: all; }
+      .nav-links a { font-size: 1.1rem; }
+      .nav-close-btn { display: block !important; position: absolute; top: 1.5rem; right: 1.5rem; background: none; border: none; cursor: pointer; }
+      .hero-inner { grid-template-columns: 1fr; padding-top: 7rem; gap: 2.5rem; }
+      .hero-card-w { display: none; }
+      .svc-grid { grid-template-columns: 1fr 1fr; }
+      .about-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+      .contact-grid { grid-template-columns: 1fr; }
+      .journey-grid { grid-template-columns: 1fr; gap: 1rem; }
+      .journey-grid::before, .journey-grid::after { display: none; }
+      .testi-grid { grid-template-columns: 1fr; }
+      .foot-inner { flex-direction: column; align-items: flex-start; gap: 1.2rem; }
+    }
+    @media (max-width: 480px) {
+      .svc-grid { grid-template-columns: 1fr; }
+      .hero-btns { flex-direction: column; align-items: stretch; }
+      .hero-btns .btn-p,
+      .hero-btns .btn-wa,
+      .hero-btns .btn-o { width: 100%; justify-content: center; }
+      .hero-stats { gap: 1.8rem; }
+      section { padding: 4rem 1.2rem; }
+      .hero-inner { padding: 7rem 1.2rem 4rem; }
+      nav { padding: 1.2rem 1rem; }
+      nav.scrolled { padding: .9rem 1rem; }
+      .btn-nav-rdv { display: none; }
+      .logo-name { font-size: .88rem; }
+      .logo-role { font-size: .57rem; }
+      .why-inner { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 360px) {
+      .logo-badge { width: 36px; height: 36px; }
+      .logo-badge svg { width: 30px; height: 30px; }
+      section { padding: 3.5rem 1rem; }
+      .hero-inner { padding: 7rem 1rem 3.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ─── LOADER ─── -->
+<div id="loader">
+  <div>
+    <div class="loader-icon">
+      <svg width="46" height="46" viewBox="0 0 46 46" fill="none">
+        <circle cx="23" cy="23" r="21" stroke="rgba(196,149,74,.25)" stroke-width="1.5"/>
+        <text x="3" y="33" font-family="Cormorant Garamond,serif" font-size="26" font-weight="700" fill="white">C</text>
+        <text x="21" y="33" font-family="Cormorant Garamond,serif" font-size="26" font-weight="700" fill="#C0392B">F</text>
+      </svg>
+    </div>
+    <div class="loader-logo">Dr. <em>F. CHIHAOUI</em></div>
+    <div class="loader-role">Chirurgien Urologue · سيدي بلعباس</div>
+    <div class="loader-bar"><div class="loader-fill"></div></div>
+  </div>
+</div>
+
+
+<!-- ─── NAV ─── -->
+<nav id="nav">
+  <a href="#home" class="logo-wrap">
+    <div class="logo-badge">
+      <svg viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <text x="1" y="27" font-family="Cormorant Garamond,serif" font-size="22" font-weight="700" fill="white">C</text>
+        <text x="17" y="27" font-family="Cormorant Garamond,serif" font-size="22" font-weight="700" fill="#C0392B">F</text>
+      </svg>
+    </div>
+    <div class="logo-info">
+      <span class="logo-name">Dr. F. CHIHAOUI</span>
+      <span class="logo-role" id="t-brand-role">Chirurgien Urologue</span>
+    </div>
+  </a>
+
+  <ul class="nav-links" id="navLinks">
+    <button class="nav-close-btn" style="display:none;" onclick="closeMenu()">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"><path d="M18 6L6 18M6 6l12 12"/></svg>
+    </button>
+    <li><a href="#services"   id="t-nav-svc">Services</a></li>
+    <li><a href="#about"      id="t-nav-about">À propos</a></li>
+    <li><a href="#faq"        id="t-nav-faq">FAQ</a></li>
+    <li><a href="#contact"    id="t-nav-contact">Contact</a></li>
+  </ul>
+
+  <div class="nav-actions">
+    <button class="btn-lang" onclick="toggleLang()" id="langBtn">عربي</button>
+    <a href="tel:0560066002" class="btn-nav-rdv" id="t-nav-rdv">📞 Prendre RDV</a>
+    <div class="hamburger" onclick="openMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+
+<!-- ─── HERO ─── -->
+<section class="hero" id="home">
+  <div class="hero-bg"></div>
+
+  <div class="hero-deco">
+    <svg width="620" height="620" viewBox="0 0 620 620" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="310" cy="310" r="300" stroke="rgba(196,149,74,1)" stroke-width=".8"/>
+      <circle cx="310" cy="310" r="215" stroke="rgba(196,149,74,1)" stroke-width=".6"/>
+      <circle cx="310" cy="310" r="140" stroke="rgba(196,149,74,1)" stroke-width=".8"/>
+      <ellipse cx="248" cy="278" rx="52" ry="72" stroke="rgba(196,149,74,1)" stroke-width="1.4" transform="rotate(-8 248 278)"/>
+      <ellipse cx="260" cy="278" rx="28" ry="42" stroke="rgba(196,149,74,.7)" stroke-width="1" transform="rotate(-8 260 278)"/>
+      <ellipse cx="372" cy="278" rx="52" ry="72" stroke="rgba(196,149,74,1)" stroke-width="1.4" transform="rotate(8 372 278)"/>
+      <ellipse cx="360" cy="278" rx="28" ry="42" stroke="rgba(196,149,74,.7)" stroke-width="1" transform="rotate(8 360 278)"/>
+      <path d="M270 350 Q290 370 305 410 Q308 440 310 480" stroke="rgba(196,149,74,.8)" stroke-width="1.2" fill="none"/>
+      <path d="M350 350 Q330 370 315 410 Q312 440 310 480" stroke="rgba(196,149,74,.8)" stroke-width="1.2" fill="none"/>
+      <ellipse cx="310" cy="510" rx="35" ry="28" stroke="rgba(196,149,74,.8)" stroke-width="1.2"/>
+      <line x1="310" y1="60" x2="310" y2="90" stroke="rgba(196,149,74,.6)" stroke-width=".8"/>
+      <line x1="296" y1="75" x2="324" y2="75" stroke="rgba(196,149,74,.6)" stroke-width=".8"/>
+    </svg>
+  </div>
+
+  <div class="hero-vline"></div>
+  <div class="hero-hline"></div>
+
+  <div class="hero-inner">
+    <div>
+      <div class="hero-pill" id="t-hero-pill">Médecin Spécialiste · Sidi Bel Abbès</div>
+      <h1 class="hero-h1">Dr.&nbsp;<span class="hi">F.</span>&nbsp;<span class="hs">CHIHAOUI</span></h1>
+      <p class="hero-title" id="t-hero-role">Chirurgien Urologue</p>
+
+      <div class="hero-dips">
+        <div class="dip-line" id="t-dip1">Diplômé de la Faculté de Médecine d'Alger</div>
+        <div class="dip-line" id="t-dip2">Diplômé de l'Université Jordanienne</div>
+      </div>
+
+      <p class="hero-desc" id="t-hero-desc">
+        Prise en charge complète des pathologies urologiques — reins, vessie, prostate, fertilité masculine et troubles sexuels. Consultations, échographie et endoscopie disponibles sur rendez-vous.
+      </p>
+
+      <div class="hero-btns">
+        <a href="tel:0560066002" class="btn-p" id="t-hero-cta1">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.5 12 19.79 19.79 0 011.53 3.49 2 2 0 013.5 1.27h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L7.91 9.27a16 16 0 006.29 6.29l1.38-1.38a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+          Prendre rendez-vous
+        </a>
+        <a href="https://wa.me/213560066002" class="btn-wa" target="_blank" id="t-hero-wa">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          WhatsApp
+        </a>
+        <a href="#services" class="btn-o" id="t-hero-cta2">Nos spécialités</a>
+      </div>
+
+      <div class="hero-stats">
+        <div>
+          <div class="stat-n" id="ctr-svc">6</div>
+          <div class="stat-l" id="t-stat1">Spécialités</div>
+        </div>
+        <div>
+          <div class="stat-n" id="ctr-dip">2</div>
+          <div class="stat-l" id="t-stat2">Diplômes</div>
+        </div>
+        <div>
+          <div class="stat-n" id="ctr-days">6j</div>
+          <div class="stat-l" id="t-stat3">/ semaine</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-card-w">
+      <div class="hero-card">
+        <div class="c-head">
+          <div class="c-avatar">
+            <svg viewBox="0 0 44 44" fill="none" width="44" height="44">
+              <text x="3" y="31" font-family="Cormorant Garamond,serif" font-size="24" font-weight="700" fill="white">C</text>
+              <text x="20" y="31" font-family="Cormorant Garamond,serif" font-size="24" font-weight="700" fill="#C0392B">F</text>
+            </svg>
+          </div>
+          <div>
+            <div class="c-name">Dr. F. CHIHAOUI</div>
+            <div class="c-spec" id="t-card-spec">Chirurgien Urologue · SBA</div>
+          </div>
+        </div>
+        <div class="c-row">
+          <div class="c-ico"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.5 12 19.79 19.79 0 011.53 3.49 2 2 0 013.5 1.27h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L7.91 9.27a16 16 0 006.29 6.29l1.38-1.38a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg></div>
+          <span>0560 06 60 02</span>
+        </div>
+        <div class="c-row">
+          <div class="c-ico"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+          <span id="t-card-addr">Rue Jean Jack Rousseau, SBA 22002</span>
+        </div>
+        <div class="c-row">
+          <div class="c-ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+          <span id="t-card-hours">Sam–Mer : 08:30–12:00 &amp; 14:30–18:00<br>Jeu : 08:30–12:00</span>
+        </div>
+        <div class="c-row">
+          <div class="c-ico"><svg viewBox="0 0 24 24"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg></div>
+          <span id="t-card-dip">Fac. Médecine Alger · Univ. Jordanie</span>
+        </div>
+        <div class="c-status">
+          <div class="s-dot"></div>
+          <span class="s-txt" id="t-card-status">Cabinet ouvert 6 jours / semaine</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ─── TRUST BAR ─── -->
+<div class="trust-bar">
+  <div class="trust-inner">
+    <div class="trust-item">
+      <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+      <span id="t-trust1">Chirurgien Urologue Certifié</span>
+    </div>
+    <div class="trust-div"></div>
+    <div class="trust-item">
+      <svg viewBox="0 0 24 24"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+      <span id="t-trust2">Fac. de Médecine d'Alger</span>
+    </div>
+    <div class="trust-div"></div>
+    <div class="trust-item">
+      <svg viewBox="0 0 24 24"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+      <span id="t-trust3">Université Jordanienne</span>
+    </div>
+    <div class="trust-div"></div>
+    <div class="trust-item">
+      <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+      <span id="t-trust4">Consultation sur rendez-vous</span>
+    </div>
+    <div class="trust-div"></div>
+    <div class="trust-item">
+      <svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+      <span id="t-trust5">Échographie &amp; Endoscopie au cabinet</span>
+    </div>
+  </div>
+</div>
+
+
+<!-- ─── PATIENT JOURNEY ─── -->
+<section class="journey-sec" id="journey">
+  <div class="container">
+    <div class="journey-head reveal">
+      <div class="sec-tag" id="t-jrn-tag">Comment ça marche</div>
+      <h2 class="sec-h2" id="t-jrn-h2">Votre prise en charge<br>en 3 étapes</h2>
+    </div>
+    <div class="journey-grid">
+      <div class="journey-step reveal rd1">
+        <div class="step-num">01</div>
+        <div class="step-ico">
+          <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.5 12 19.79 19.79 0 011.53 3.49 2 2 0 013.5 1.27h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L7.91 9.27a16 16 0 006.29 6.29l1.38-1.38a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+        </div>
+        <div class="step-title" id="t-jrn-s1t">Prise de rendez-vous</div>
+        <p class="step-body" id="t-jrn-s1d">Appelez le 0560 06 60 02 ou envoyez un message WhatsApp pour fixer votre créneau selon vos disponibilités.</p>
+      </div>
+      <div class="journey-step reveal rd2">
+        <div class="step-num">02</div>
+        <div class="step-ico">
+          <svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        </div>
+        <div class="step-title" id="t-jrn-s2t">Consultation</div>
+        <p class="step-body" id="t-jrn-s2d">Rencontrez le Dr. CHIHAOUI dans un cadre professionnel et discret. Examen clinique approfondi et écoute attentive.</p>
+      </div>
+      <div class="journey-step reveal rd3">
+        <div class="step-num">03</div>
+        <div class="step-ico">
+          <svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+        </div>
+        <div class="step-title" id="t-jrn-s3t">Prise en charge</div>
+        <p class="step-body" id="t-jrn-s3d">Plan de traitement personnalisé. Échographie et endoscopie disponibles directement au cabinet si nécessaire.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ─── SERVICES ─── -->
+<section class="services" id="services">
+  <div class="container">
+    <div class="svc-head reveal">
+      <div class="sec-tag" id="t-svc-tag">Nos Spécialités</div>
+      <h2 class="sec-h2" id="t-svc-h2">Une prise en charge<br>urologique complète</h2>
+      <p class="sec-sub" id="t-svc-sub">Le Dr. F. CHIHAOUI assure le diagnostic et le traitement de l'ensemble des pathologies urologiques, avec des équipements modernes disponibles sur place.</p>
+    </div>
+
+    <div class="svc-grid">
+      <div class="svc-card reveal rd1">
+        <div class="svc-ico">
+          <!-- Kidney/Reins -->
+          <svg viewBox="0 0 24 24"><path d="M8.5 2C5.5 2 3 4.5 3 7.5c0 2 .8 3.7 2 5 1.2 1.3 2 3.2 2 5.5 0 2.2 1.8 4 4 4s4-1.8 4-4c0-2.3.8-4.2 2-5.5 1.2-1.3 2-3 2-5C19 4.5 16.5 2 13.5 2c-1.1 0-2.1.3-3 .9-.4.3-.7.5-1 .5s-.6-.2-1-.5C7.6 2.3 6.6 2 5.5 2H8.5z" stroke-linecap="round"/></svg>
+        </div>
+        <div class="svc-n" id="t-s1n">Reins &amp; Vessie</div>
+        <p class="svc-d" id="t-s1d">Diagnostic et traitement des affections rénales et vésicales. Suivi personnalisé et adapté à chaque patient.</p>
+      </div>
+      <div class="svc-card reveal rd2">
+        <div class="svc-ico">
+          <!-- Prostate -->
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="10" r="5"/><path d="M12 15v7M9 19h6"/><path d="M7 10a5 5 0 01.5-2.2M17 10a5 5 0 01-.5-2.2"/></svg>
+        </div>
+        <div class="svc-n" id="t-s2n">Prostate</div>
+        <p class="svc-d" id="t-s2d">Dépistage, diagnostic et prise en charge des pathologies prostatiques bénignes et malignes.</p>
+      </div>
+      <div class="svc-card reveal rd3">
+        <div class="svc-ico">
+          <!-- Fertility / DNA -->
+          <svg viewBox="0 0 24 24"><path d="M2 12C2 6.5 6.5 2 12 2s10 4.5 10 10-4.5 10-10 10S2 17.5 2 12z"/><path d="M8 9c0-2.2 1.8-4 4-4s4 1.8 4 4-1.8 4-4 4-4-1.8-4-4z"/><path d="M12 13v6"/></svg>
+        </div>
+        <div class="svc-n" id="t-s3n">Stérilité Masculine</div>
+        <p class="svc-d" id="t-s3d">Bilan complet de l'infertilité masculine, investigations approfondies et prise en charge spécialisée.</p>
+      </div>
+      <div class="svc-card reveal rd1">
+        <div class="svc-ico">
+          <!-- Heart/Person -->
+          <svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+        </div>
+        <div class="svc-n" id="t-s4n">Troubles Sexuels</div>
+        <p class="svc-d" id="t-s4d">Évaluation et traitement médical des dysfonctions sexuelles masculines dans un cadre confidentiel et bienveillant.</p>
+      </div>
+      <div class="svc-card reveal rd2">
+        <div class="svc-ico">
+          <!-- Ultrasound waves -->
+          <svg viewBox="0 0 24 24"><path d="M3 12h2M19 12h2M6.3 6.3l1.4 1.4M16.3 16.3l1.4 1.4M6.3 17.7l1.4-1.4M16.3 7.7l1.4-1.4"/><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2"/></svg>
+        </div>
+        <div class="svc-n" id="t-s5n">Échographie</div>
+        <p class="svc-d" id="t-s5d">Examens échographiques urologiques réalisés directement au cabinet pour un diagnostic rapide et précis.</p>
+      </div>
+      <div class="svc-card reveal rd3">
+        <div class="svc-ico">
+          <!-- Scope/tube -->
+          <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg>
+        </div>
+        <div class="svc-n" id="t-s6n">Endoscopie</div>
+        <p class="svc-d" id="t-s6d">Explorations endoscopiques des voies urinaires pour un diagnostic et un traitement peu invasifs.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ─── WHY US BAND ─── -->
+<div class="why-band">
+  <div class="why-inner">
+    <div class="why-item reveal">
+      <div class="why-ico">
+        <svg viewBox="0 0 24 24"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+      </div>
+      <div class="why-title" id="t-why-t1">Double formation</div>
+      <div class="why-sub" id="t-why-s1">Diplômé d'Alger et de l'Université Jordanienne</div>
+    </div>
+    <div class="why-item reveal rd1">
+      <div class="why-ico">
+        <svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+      </div>
+      <div class="why-title" id="t-why-t2">Examens sur place</div>
+      <div class="why-sub" id="t-why-s2">Échographie et endoscopie directement au cabinet</div>
+    </div>
+    <div class="why-item reveal rd2">
+      <div class="why-ico">
+        <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+      </div>
+      <div class="why-title" id="t-why-t3">Suivi personnalisé</div>
+      <div class="why-sub" id="t-why-s3">Prise en charge complète de la consultation au suivi</div>
+    </div>
+    <div class="why-item reveal rd3">
+      <div class="why-ico">
+        <svg viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
+      </div>
+      <div class="why-title" id="t-why-t4">Cadre confidentiel</div>
+      <div class="why-sub" id="t-why-s4">Discrétion et confidentialité garanties</div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ─── ABOUT ─── -->
+<section class="about" id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-body reveal">
+        <div class="sec-tag" id="t-about-tag">À Propos</div>
+        <h2 class="sec-h2" id="t-about-h2">Un chirurgien à<br>votre service</h2>
+        <p id="t-about-p1">Le Dr. F. CHIHAOUI est Chirurgien Urologue, exerçant à Sidi Bel Abbès. Son cabinet accueille les patients dans un cadre professionnel et discret, avec des équipements modernes pour assurer des soins de qualité.</p>
+        <p id="t-about-p2">Soucieux du bien-être de ses patients, le Dr. CHIHAOUI assure une prise en charge globale et personnalisée — de la consultation initiale au suivi médical, en passant par les actes techniques spécialisés réalisés sur place.</p>
+
+        <div class="dip-section">
+          <div class="dip-title" id="t-dip-title">Formation &amp; Diplômes</div>
+          <div class="dip-card reveal rd1">
+            <div class="dip-icon">
+              <svg viewBox="0 0 24 24"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+            </div>
+            <div class="dip-info">
+              <div class="dip-nm" id="t-dip-nm1">Faculté de Médecine d'Alger</div>
+              <div class="dip-dt" id="t-dip-dt1">Diplôme de Chirurgie — Urologie</div>
+            </div>
+          </div>
+          <div class="dip-card reveal rd2">
+            <div class="dip-icon">
+              <svg viewBox="0 0 24 24"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+            </div>
+            <div class="dip-info">
+              <div class="dip-nm" id="t-dip-nm2">Université Jordanienne</div>
+              <div class="dip-dt" id="t-dip-dt2">Spécialisation en Urologie</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="creds reveal rd2">
+        <div class="cred-item"><div class="cred-dot"></div><span class="cred-txt" id="t-c1">Chirurgien Urologue — double diplôme</span></div>
+        <div class="cred-item"><div class="cred-dot"></div><span class="cred-txt" id="t-c2">Faculté de Médecine d'Alger</span></div>
+        <div class="cred-item"><div class="cred-dot"></div><span class="cred-txt" id="t-c3">Université Jordanienne</span></div>
+        <div class="cred-item"><div class="cred-dot"></div><span class="cred-txt" id="t-c4">Consultations sur rendez-vous</span></div>
+        <div class="cred-item"><div class="cred-dot"></div><span class="cred-txt" id="t-c5">Échographie &amp; endoscopie au cabinet</span></div>
+        <div class="cred-item"><div class="cred-dot"></div><span class="cred-txt" id="t-c6">Prise en charge globale et confidentielle</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ─── TESTIMONIALS ─── -->
+<section class="testimonials-sec" id="temoignages">
+  <div class="container">
+    <div class="testi-head reveal">
+      <div class="sec-tag" id="t-testi-tag">Témoignages</div>
+      <h2 class="sec-h2" id="t-testi-h2">Ce que disent<br>nos patients</h2>
+      <p class="testi-note" id="t-testi-note">Témoignages représentatifs de patients.</p>
+    </div>
+    <div class="testi-grid">
+      <div class="testi-card reveal rd1">
+        <span class="testi-quote-mark">"</span>
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-quote" id="t-testi-q1">Je peux dire que ce médecin est le seul en Algérie à parler d'innovation en chirurgie urologique. Un médecin hautement qualifié. Merci, Docteur.</p>
+        <div class="testi-author">
+          <div class="testi-avatar">EL</div>
+          <div>
+            <div class="testi-name" id="t-testi-n1">Edward L.</div>
+            <div class="testi-city" id="t-testi-c1">Google Maps ★★★★★</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card reveal rd2">
+        <span class="testi-quote-mark">"</span>
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-quote" id="t-testi-q2">Résidant en France, j'ai consulté le Dr. Chihaoui sur recommandation d'un ami. J'ai été agréablement surpris par l'accueil, le respect des horaires et son professionnalisme exemplaire. Merci docteur, notre pays peut être fier de vous.</p>
+        <div class="testi-author">
+          <div class="testi-avatar">DM</div>
+          <div>
+            <div class="testi-name" id="t-testi-n2">Djillali M.</div>
+            <div class="testi-city" id="t-testi-c2">Google Maps ★★★★★</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card reveal rd3">
+        <span class="testi-quote-mark">"</span>
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-quote" id="t-testi-q3">طبيب ممتاز ومتمكن في تخصصه. استقبلني بكل احترام وشرح لي حالتي بكل وضوح. التجربة كانت مريحة ونصائحه كانت فعالة. أنصح به بشدة لأي شخص يبحث عن طبيب محترف. وفقك الله.</p>
+        <div class="testi-author">
+          <div class="testi-avatar">MM</div>
+          <div>
+            <div class="testi-name" id="t-testi-n3">mt Mohamed</div>
+            <div class="testi-city" id="t-testi-c3">Google Maps ★★★★★</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ─── FAQ ─── -->
+<section class="faq-sec" id="faq">
+  <div class="container">
+    <div class="faq-grid">
+      <div class="faq-left reveal">
+        <div class="sec-tag" id="t-faq-tag">FAQ</div>
+        <h2 class="sec-h2" id="t-faq-h2">Questions<br>fréquentes</h2>
+        <p class="sec-sub" id="t-faq-sub">Retrouvez les réponses aux questions les plus posées sur le cabinet et les consultations.</p>
+        <div class="faq-cta-block">
+          <p id="t-faq-cta-p">Vous ne trouvez pas votre réponse ? N'hésitez pas à nous contacter directement.</p>
+          <a href="tel:0560066002" class="btn-faq-call">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.5 12 19.79 19.79 0 011.53 3.49 2 2 0 013.5 1.27h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L7.91 9.27a16 16 0 006.29 6.29l1.38-1.38a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+            <span id="t-faq-cta-btn">Appeler le cabinet</span>
+          </a>
+        </div>
+      </div>
+      <div class="faq-list reveal rd2">
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            <span id="t-faq-q1">Comment prendre rendez-vous ?</span>
+            <div class="faq-q-icon"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
+          </button>
+          <div class="faq-a"><div class="faq-a-inner" id="t-faq-a1">Par téléphone au 0560 06 60 02 ou via WhatsApp. Les consultations sont exclusivement sur rendez-vous. Le cabinet est ouvert 6 jours par semaine.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            <span id="t-faq-q2">Quels examens sont disponibles au cabinet ?</span>
+            <div class="faq-q-icon"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
+          </button>
+          <div class="faq-a"><div class="faq-a-inner" id="t-faq-a2">L'échographie urologique et l'endoscopie des voies urinaires sont réalisées directement au cabinet, sans nécessité de déplacement vers un autre établissement.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            <span id="t-faq-q3">Faut-il une ordonnance ou une référence médicale ?</span>
+            <div class="faq-q-icon"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
+          </button>
+          <div class="faq-a"><div class="faq-a-inner" id="t-faq-a3">Non, vous pouvez consulter directement le Dr. CHIHAOUI en appelant pour prendre rendez-vous. Une ordonnance n'est pas obligatoire pour une première consultation.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            <span id="t-faq-q4">Quelles pathologies sont traitées ?</span>
+            <div class="faq-q-icon"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
+          </button>
+          <div class="faq-a"><div class="faq-a-inner" id="t-faq-a4">Affections rénales et vésicales, pathologies prostatiques, infertilité masculine, troubles sexuels masculins, et toutes autres pathologies du système urinaire.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            <span id="t-faq-q5">Les consultations sont-elles confidentielles ?</span>
+            <div class="faq-q-icon"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
+          </button>
+          <div class="faq-a"><div class="faq-a-inner" id="t-faq-a5">Oui, absolument. Toutes les consultations se déroulent dans un cadre strictement confidentiel et professionnel, particulièrement pour les pathologies sensibles comme les troubles sexuels.</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ─── CONTACT ─── -->
+<section class="contact-sec" id="contact">
+  <div class="container">
+    <div class="sec-tag reveal" id="t-contact-tag">Contact &amp; Horaires</div>
+    <h2 class="sec-h2 reveal" id="t-contact-h2">Prendre rendez-vous</h2>
+    <br>
+    <div class="contact-grid">
+
+      <div class="hours-box reveal">
+        <div class="hours-ttl" id="t-hours-ttl">⏰ Horaires de consultation</div>
+
+        <div class="hr-row">
+          <span class="hr-day hr-day-0">Samedi</span>
+          <div class="hr-slots">
+            <span class="hr-slot am">08:30 – 12:00</span>
+            <span class="hr-slot pm">14:30 – 18:00</span>
+          </div>
+        </div>
+        <div class="hr-row">
+          <span class="hr-day hr-day-1">Dimanche</span>
+          <div class="hr-slots">
+            <span class="hr-slot am">08:30 – 12:00</span>
+            <span class="hr-slot pm">14:30 – 18:00</span>
+          </div>
+        </div>
+        <div class="hr-row">
+          <span class="hr-day hr-day-2">Lundi</span>
+          <div class="hr-slots">
+            <span class="hr-slot am">08:30 – 12:00</span>
+            <span class="hr-slot pm">14:30 – 18:00</span>
+          </div>
+        </div>
+        <div class="hr-row">
+          <span class="hr-day hr-day-3">Mardi</span>
+          <div class="hr-slots">
+            <span class="hr-slot am">08:30 – 12:00</span>
+            <span class="hr-slot pm">14:30 – 18:00</span>
+          </div>
+        </div>
+        <div class="hr-row">
+          <span class="hr-day hr-day-4">Mercredi</span>
+          <div class="hr-slots">
+            <span class="hr-slot am">08:30 – 12:00</span>
+            <span class="hr-slot pm">14:30 – 18:00</span>
+          </div>
+        </div>
+        <div class="hr-row">
+          <span class="hr-day hr-day-5">Jeudi</span>
+          <div class="hr-slots">
+            <span class="hr-slot am">08:30 – 12:00</span>
+          </div>
+        </div>
+        <div class="hr-row">
+          <span class="hr-day hr-day-6">Vendredi</span>
+          <span class="hr-closed" id="t-closed">Fermé</span>
+        </div>
+      </div>
+
+      <div class="info-col reveal rd2">
+        <div class="info-card">
+          <div class="info-ico">
+            <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.5 12 19.79 19.79 0 011.53 3.49 2 2 0 013.5 1.27h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L7.91 9.27a16 16 0 006.29 6.29l1.38-1.38a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+          </div>
+          <div>
+            <div class="info-lbl" id="t-lbl-phone">Téléphone</div>
+            <div class="info-val"><a href="tel:0560066002">0560 06 60 02</a></div>
+          </div>
+        </div>
+        <div class="info-card">
+          <div class="info-ico">
+            <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <div>
+            <div class="info-lbl" id="t-lbl-addr">Adresse</div>
+            <div class="info-val" id="t-val-addr">Rue Jean Jack Rousseau<br>Sidi Bel Abbès 22002</div>
+          </div>
+        </div>
+        <div class="info-card">
+          <div class="info-ico">
+            <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+          </div>
+          <div>
+            <div class="info-lbl" id="t-lbl-rdv">Rendez-vous</div>
+            <div class="info-val" id="t-val-rdv">Sur appel téléphonique</div>
+          </div>
+        </div>
+
+        <a href="tel:0560066002" class="btn-call-full" id="t-cta-call">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.5 12 19.79 19.79 0 011.53 3.49 2 2 0 013.5 1.27h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L7.91 9.27a16 16 0 006.29 6.29l1.38-1.38a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+          Appeler maintenant
+        </a>
+        <a href="https://wa.me/213560066002" class="btn-wa-full" target="_blank" id="t-cta-wa">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          WhatsApp
+        </a>
+      </div>
+
+      <div class="map-container reveal" style="grid-column: 1 / -1; margin-top: 1rem;">
+        <a href="https://maps.google.com/?q=Rue+Jean+Jack+Rousseau,+Sidi+Bel+Abbes,+Algerie" target="_blank" rel="noopener noreferrer" style="
+          display: flex; align-items: center; justify-content: space-between;
+          background: var(--white); border: 1px solid var(--border);
+          border-radius: 1.2rem; padding: 1.4rem 1.6rem;
+          text-decoration: none; transition: border-color .3s, box-shadow .3s;
+          gap: 1rem;
+        " onmouseover="this.style.borderColor='rgba(196,149,74,.4)';this.style.boxShadow='0 8px 24px rgba(13,27,42,.08)'" onmouseout="this.style.borderColor='rgba(13,27,42,0.07)';this.style.boxShadow='none'">
+          <div style="display:flex; align-items:center; gap:1rem;">
+            <div style="width:44px;height:44px;background:var(--gold-dim);border-radius:12px;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C4954A" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div>
+              <div style="color:var(--text);font-weight:600;font-size:.9rem;">Rue Jean Jack Rousseau</div>
+              <div style="color:var(--muted);font-size:.78rem;margin-top:.15rem;">Sidi Bel Abbès 22002, Algérie</div>
+            </div>
+          </div>
+          <div style="display:flex;align-items:center;gap:.4rem;color:var(--gold);font-size:.78rem;font-weight:600;white-space:nowrap;flex-shrink:0;">
+            <span id="t-map-open">Ouvrir</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#C4954A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          </div>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<footer>
+  <div class="foot-inner">
+    <div>
+      <div class="foot-brand">Dr. <em>F. CHIHAOUI</em> &nbsp;·&nbsp; <span style="color:rgba(255,255,255,.42);font-size:.88em;font-weight:400;">Chirurgien Urologue</span></div>
+      <span class="foot-sub">Sidi Bel Abbès, Algérie</span>
+    </div>
+    <ul class="foot-links">
+      <li><a href="#services" id="t-fl1">Services</a></li>
+      <li><a href="#about"    id="t-fl2">À propos</a></li>
+      <li><a href="#faq"      id="t-fl3-faq">FAQ</a></li>
+      <li><a href="#contact"  id="t-fl3">Contact</a></li>
+    </ul>
+    <div>
+      <div class="foot-copy" id="t-foot-copy">© 2026 Cabinet Dr. F. CHIHAOUI · Tous droits réservés</div>
+      <div class="foot-dev">Site réalisé par Moncef · Développeur Web</div>
+    </div>
+  </div>
+</footer>
+
+
+<button id="scrollTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+  <svg viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7"/></svg>
+</button>
+
+<a id="wa-float" href="https://wa.me/213560066002" target="_blank" title="WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+
+<script>
+/* ─── LOADER ─── */
+setTimeout(() => document.getElementById('loader').classList.add('done'), 1500);
+
+/* ─── TRANSLATIONS ─── */
+const T = {
+  fr: {
+    'brand-role': 'Chirurgien Urologue',
+    'nav-svc': 'Services', 'nav-about': 'À propos', 'nav-faq': 'FAQ', 'nav-contact': 'Contact',
+    'nav-rdv': '📞 Prendre RDV',
+    'hero-pill': 'Médecin Spécialiste · Sidi Bel Abbès',
+    'hero-role': 'Chirurgien Urologue',
+    'dip1': "Diplômé de la Faculté de Médecine d'Alger",
+    'dip2': "Diplômé de l'Université Jordanienne",
+    'hero-desc': "Prise en charge complète des pathologies urologiques — reins, vessie, prostate, fertilité masculine et troubles sexuels. Consultations, échographie et endoscopie disponibles sur rendez-vous.",
+    'hero-cta1': 'Prendre rendez-vous', 'hero-wa': 'WhatsApp', 'hero-cta2': 'Nos spécialités',
+    'stat1': 'Spécialités', 'stat2': 'Diplômes', 'stat3': '/ semaine',
+    'card-spec': 'Chirurgien Urologue · SBA',
+    'card-addr': 'Rue Jean Jack Rousseau, SBA 22002',
+    'card-hours': 'Sam–Mer : 08:30–12:00 &amp; 14:30–18:00<br>Jeu : 08:30–12:00',
+    'card-dip': 'Fac. Médecine Alger · Univ. Jordanie',
+    'card-status': 'Cabinet ouvert 6 jours / semaine',
+    'trust1': 'Chirurgien Urologue Certifié',
+    'trust2': "Fac. de Médecine d'Alger",
+    'trust3': 'Université Jordanienne',
+    'trust4': 'Consultation sur rendez-vous',
+    'trust5': 'Échographie &amp; Endoscopie au cabinet',
+    'jrn-tag': 'Comment ça marche', 'jrn-h2': 'Votre prise en charge<br>en 3 étapes',
+    'jrn-s1t': 'Prise de rendez-vous',
+    'jrn-s1d': 'Appelez le 0560 06 60 02 ou envoyez un message WhatsApp pour fixer votre créneau selon vos disponibilités.',
+    'jrn-s2t': 'Consultation',
+    'jrn-s2d': 'Rencontrez le Dr. CHIHAOUI dans un cadre professionnel et discret. Examen clinique approfondi et écoute attentive.',
+    'jrn-s3t': 'Prise en charge',
+    'jrn-s3d': 'Plan de traitement personnalisé. Échographie et endoscopie disponibles directement au cabinet si nécessaire.',
+    'svc-tag': 'Nos Spécialités',
+    'svc-h2': 'Une prise en charge<br>urologique complète',
+    'svc-sub': "Le Dr. F. CHIHAOUI assure le diagnostic et le traitement de l'ensemble des pathologies urologiques, avec des équipements modernes disponibles sur place.",
+    's1n': 'Reins &amp; Vessie', 's1d': "Diagnostic et traitement des affections rénales et vésicales. Suivi personnalisé et adapté à chaque patient.",
+    's2n': 'Prostate', 's2d': "Dépistage, diagnostic et prise en charge des pathologies prostatiques bénignes et malignes.",
+    's3n': 'Stérilité Masculine', 's3d': "Bilan complet de l'infertilité masculine, investigations approfondies et prise en charge spécialisée.",
+    's4n': 'Troubles Sexuels', 's4d': "Évaluation et traitement médical des dysfonctions sexuelles masculines dans un cadre confidentiel et bienveillant.",
+    's5n': 'Échographie', 's5d': "Examens échographiques urologiques réalisés directement au cabinet pour un diagnostic rapide et précis.",
+    's6n': 'Endoscopie', 's6d': "Explorations endoscopiques des voies urinaires pour un diagnostic et un traitement peu invasifs.",
+    'why-t1': 'Double formation', 'why-s1': "Diplômé d'Alger et de l'Université Jordanienne",
+    'why-t2': 'Examens sur place', 'why-s2': 'Échographie et endoscopie directement au cabinet',
+    'why-t3': 'Suivi personnalisé', 'why-s3': 'Prise en charge complète de la consultation au suivi',
+    'why-t4': 'Cadre confidentiel', 'why-s4': 'Discrétion et confidentialité garanties',
+    'about-tag': 'À Propos', 'about-h2': 'Un chirurgien à<br>votre service',
+    'about-p1': "Le Dr. F. CHIHAOUI est Chirurgien Urologue, exerçant à Sidi Bel Abbès. Son cabinet accueille les patients dans un cadre professionnel et discret, avec des équipements modernes pour assurer des soins de qualité.",
+    'about-p2': "Soucieux du bien-être de ses patients, le Dr. CHIHAOUI assure une prise en charge globale et personnalisée — de la consultation initiale au suivi médical, en passant par les actes techniques spécialisés réalisés sur place.",
+    'dip-title': 'Formation &amp; Diplômes',
+    'dip-nm1': "Faculté de Médecine d'Alger", 'dip-dt1': 'Diplôme de Chirurgie — Urologie',
+    'dip-nm2': 'Université Jordanienne', 'dip-dt2': 'Spécialisation en Urologie',
+    'c1': 'Chirurgien Urologue — double diplôme', 'c2': "Faculté de Médecine d'Alger",
+    'c3': 'Université Jordanienne', 'c4': 'Consultations sur rendez-vous',
+    'c5': 'Échographie &amp; endoscopie au cabinet', 'c6': 'Prise en charge globale et confidentielle',
+    'testi-tag': 'Témoignages', 'testi-h2': 'Ce que disent<br>nos patients',
+    'testi-note': 'Avis vérifiés Google Maps.',
+    'testi-q1': "Je peux dire que ce médecin est le seul en Algérie à parler d'innovation en chirurgie urologique. Un médecin hautement qualifié. Merci, Docteur.",
+    'testi-n1': 'Edward L.', 'testi-c1': 'Google Maps ★★★★★',
+    'testi-q2': "Résidant en France, j'ai consulté le Dr. Chihaoui sur recommandation d'un ami. J'ai été agréablement surpris par l'accueil, le respect des horaires et son professionnalisme exemplaire. Merci docteur, notre pays peut être fier de vous.",
+    'testi-n2': 'Djillali M.', 'testi-c2': 'Google Maps ★★★★★',
+    'testi-q3': 'طبيب ممتاز ومتمكن في تخصصه. استقبلني بكل احترام وشرح لي حالتي بكل وضوح. التجربة كانت مريحة ونصائحه كانت فعالة. أنصح به بشدة لأي شخص يبحث عن طبيب محترف. وفقك الله.',
+    'testi-n3': 'mt Mohamed', 'testi-c3': 'Google Maps ★★★★★',
+    'faq-tag': 'FAQ', 'faq-h2': 'Questions<br>fréquentes',
+    'faq-sub': 'Retrouvez les réponses aux questions les plus posées sur le cabinet et les consultations.',
+    'faq-cta-p': 'Vous ne trouvez pas votre réponse ? N\'hésitez pas à nous contacter.',
+    'faq-cta-btn': 'Appeler le cabinet',
+    'faq-q1': 'Comment prendre rendez-vous ?',
+    'faq-a1': 'Par téléphone au 0560 06 60 02 ou via WhatsApp. Les consultations sont exclusivement sur rendez-vous. Le cabinet est ouvert 6 jours par semaine.',
+    'faq-q2': 'Quels examens sont disponibles au cabinet ?',
+    'faq-a2': "L'échographie urologique et l'endoscopie des voies urinaires sont réalisées directement au cabinet, sans nécessité de déplacement vers un autre établissement.",
+    'faq-q3': 'Faut-il une ordonnance ou une référence médicale ?',
+    'faq-a3': 'Non, vous pouvez consulter directement le Dr. CHIHAOUI en appelant pour prendre rendez-vous. Une ordonnance n\'est pas obligatoire pour une première consultation.',
+    'faq-q4': 'Quelles pathologies sont traitées ?',
+    'faq-a4': 'Affections rénales et vésicales, pathologies prostatiques, infertilité masculine, troubles sexuels masculins, et toutes autres pathologies du système urinaire.',
+    'faq-q5': 'Les consultations sont-elles confidentielles ?',
+    'faq-a5': 'Oui, absolument. Toutes les consultations se déroulent dans un cadre strictement confidentiel et professionnel, particulièrement pour les pathologies sensibles.',
+    'contact-tag': 'Contact &amp; Horaires', 'contact-h2': 'Prendre rendez-vous',
+    'hours-ttl': '⏰ Horaires de consultation', 'closed': 'Fermé',
+    'lbl-phone': 'Téléphone', 'lbl-addr': 'Adresse',
+    'val-addr': 'Rue Jean Jack Rousseau<br>Sidi Bel Abbès 22002',
+    'lbl-rdv': 'Rendez-vous', 'val-rdv': 'Sur appel téléphonique',
+    'cta-call': 'Appeler maintenant', 'cta-wa': 'WhatsApp',
+    'map-open': 'Ouvrir',
+    'fl1': 'Services', 'fl2': 'À propos', 'fl3-faq': 'FAQ', 'fl3': 'Contact',
+    'foot-copy': '© 2026 Cabinet Dr. F. CHIHAOUI · Tous droits réservés',
+  },
+  ar: {
+    'brand-role': 'جراح أخصائي مسالك بولية',
+    'nav-svc': 'التخصصات', 'nav-about': 'عن الطبيب', 'nav-faq': 'الأسئلة', 'nav-contact': 'التواصل',
+    'nav-rdv': '📞 حجز موعد',
+    'hero-pill': 'طبيب أخصائي · سيدي بلعباس',
+    'hero-role': 'جراح أخصائي في المسالك البولية',
+    'dip1': 'خريج كلية الطب — جامعة الجزائر',
+    'dip2': 'خريج الجامعة الأردنية',
+    'hero-desc': 'رعاية متكاملة لأمراض المسالك البولية — الكلى، المثانة، البروستاتا، العقم الذكوري والاضطرابات الجنسية. استشارات وتصوير بالموجات فوق الصوتية ومنظار بالموعد.',
+    'hero-cta1': 'حجز موعد', 'hero-wa': 'واتساب', 'hero-cta2': 'تخصصاتنا',
+    'stat1': 'تخصصات', 'stat2': 'شهادات', 'stat3': '/ الأسبوع',
+    'card-spec': 'جراح مسالك بولية · سيدي بلعباس',
+    'card-addr': 'شارع جان جاك روسو، سيدي بلعباس',
+    'card-hours': 'السبت–الأربعاء : 08:30–12:00 &amp; 14:30–18:00<br>الخميس : 08:30–12:00',
+    'card-dip': 'كلية الطب الجزائر · الجامعة الأردنية',
+    'card-status': 'العيادة مفتوحة 6 أيام / الأسبوع',
+    'trust1': 'جراح مسالك بولية معتمد',
+    'trust2': 'كلية الطب — الجزائر العاصمة',
+    'trust3': 'الجامعة الأردنية',
+    'trust4': 'استشارات بالموعد المسبق',
+    'trust5': 'أجهزة طبية حديثة في العيادة',
+    'jrn-tag': 'كيف يسير العلاج', 'jrn-h2': 'رحلتك معنا<br>في 3 خطوات',
+    'jrn-s1t': 'حجز الموعد',
+    'jrn-s1d': 'تواصل عبر الهاتف على الرقم 0560 06 60 02 أو عبر واتساب لتحديد موعد يناسبك.',
+    'jrn-s2t': 'الاستشارة',
+    'jrn-s2d': 'التقِ بالدكتور شيهاوي في إطار مهني وسري. فحص سريري شامل وإنصات تام لمشكلتك.',
+    'jrn-s3t': 'العلاج والمتابعة',
+    'jrn-s3d': 'خطة علاجية شخصية. الفحوصات بالموجات فوق الصوتية والمنظار متوفرة مباشرة بالعيادة عند الحاجة.',
+    'svc-tag': 'تخصصاتنا',
+    'svc-h2': 'رعاية بولية<br>متكاملة',
+    'svc-sub': 'يتولى د. شيهاوي تشخيص وعلاج جميع أمراض المسالك البولية بأحدث التقنيات الطبية المتوفرة داخل العيادة.',
+    's1n': 'الكلى والمثانة', 's1d': 'تشخيص وعلاج أمراض الكلى والمثانة مع متابعة شخصية لكل مريض.',
+    's2n': 'البروستاتا', 's2d': 'كشف مبكر وتشخيص وعلاج أمراض البروستاتا الحميدة والخبيثة.',
+    's3n': 'العقم عند الرجل', 's3d': 'تقييم شامل لأسباب العقم الذكوري وتقديم الحلول المتخصصة.',
+    's4n': 'الاضطرابات الجنسية', 's4d': 'تقييم وعلاج طبي للاضطرابات الجنسية الذكورية في إطار سري تام.',
+    's5n': 'الموجات فوق الصوتية', 's5d': 'فحوصات بالموجات فوق الصوتية داخل العيادة لتشخيص دقيق وسريع.',
+    's6n': 'المنظار', 's6d': 'استكشاف منظاري للجهاز البولي لتشخيص وعلاج بأقل تدخل جراحي.',
+    'why-t1': 'تكوين مزدوج', 'why-s1': 'خريج جامعة الجزائر والجامعة الأردنية',
+    'why-t2': 'فحوصات في العيادة', 'why-s2': 'الموجات فوق الصوتية والمنظار مباشرة في العيادة',
+    'why-t3': 'متابعة شخصية', 'why-s3': 'رعاية شاملة من الاستشارة الأولى إلى المتابعة',
+    'why-t4': 'سرية تامة', 'why-s4': 'خصوصية وسرية مضمونة في كل زيارة',
+    'about-tag': 'عن الطبيب', 'about-h2': 'جراح في<br>خدمتكم',
+    'about-p1': 'د. شيهاوي جراح أخصائي في أمراض المسالك البولية يمارس مهنته في سيدي بلعباس. يستقبل مرضاه في إطار مهني وسري مع تجهيزات حديثة لضمان رعاية صحية عالية الجودة.',
+    'about-p2': 'حرصاً على صحة مرضاه، يضمن د. شيهاوي رعاية شاملة وشخصية من الاستشارة الأولى إلى المتابعة المستمرة، مروراً بالإجراءات التقنية المتخصصة المتوفرة داخل العيادة.',
+    'dip-title': 'التكوين والشهادات',
+    'dip-nm1': 'كلية الطب — جامعة الجزائر', 'dip-dt1': 'شهادة في جراحة المسالك البولية',
+    'dip-nm2': 'الجامعة الأردنية', 'dip-dt2': 'تخصص في أمراض المسالك البولية',
+    'c1': 'جراح أخصائي مسالك بولية — شهادتان', 'c2': 'كلية الطب بالجزائر العاصمة',
+    'c3': 'الجامعة الأردنية', 'c4': 'استشارات بالموعد المسبق',
+    'c5': 'التصوير بالموجات والمنظار في العيادة', 'c6': 'رعاية شاملة وسرية تامة',
+    'testi-tag': 'آراء المرضى', 'testi-h2': 'ماذا يقول<br>مرضانا',
+    'testi-note': 'تقييمات موثقة من Google Maps.',
+    'testi-q1': 'يمكنني القول إن هذا الطبيب هو الوحيد في الجزائر الذي يتحدث عن الابتكار في جراحة المسالك البولية. طبيب متمكن جداً. شكراً دكتور.',
+    'testi-n1': 'Edward L.', 'testi-c1': 'Google Maps ★★★★★',
+    'testi-q2': 'أقيم في فرنسا وزرت الدكتور شيهاوي بناءً على توصية صديق. فاجأني الترحيب والالتزام بالمواعيد واحترافيته المثالية. شكراً دكتور، بلدنا يفخر بك.',
+    'testi-n2': 'Djillali M.', 'testi-c2': 'Google Maps ★★★★★',
+    'testi-q3': 'طبيب ممتاز ومتمكن في تخصصه. استقبلني بكل احترام وشرح لي حالتي بكل وضوح. التجربة كانت مريحة ونصائحه كانت فعالة. أنصح به بشدة لأي شخص يبحث عن طبيب محترف. وفقك الله.',
+    'testi-n3': 'mt Mohamed', 'testi-c3': 'Google Maps ★★★★★',
+    'faq-tag': 'الأسئلة الشائعة', 'faq-h2': 'أسئلة<br>متكررة',
+    'faq-sub': 'اعثر على إجابات أكثر الأسئلة شيوعاً حول العيادة والاستشارات.',
+    'faq-cta-p': 'لم تجد إجابتك؟ تواصل معنا مباشرة.',
+    'faq-cta-btn': 'الاتصال بالعيادة',
+    'faq-q1': 'كيف أحجز موعداً ؟',
+    'faq-a1': 'عبر الهاتف على الرقم 0560 06 60 02 أو عبر واتساب. المواعيد بالحجز المسبق فقط. العيادة مفتوحة 6 أيام في الأسبوع.',
+    'faq-q2': 'ما هي الفحوصات المتوفرة في العيادة ؟',
+    'faq-a2': 'التصوير بالموجات فوق الصوتية والمنظار البولي متوفران مباشرة بالعيادة دون الحاجة إلى التنقل لمكان آخر.',
+    'faq-q3': 'هل أحتاج إلى وصفة طبية للحجز ؟',
+    'faq-a3': 'لا، يمكنك التواصل مباشرة عبر الهاتف لحجز موعد. لا تُشترط وصفة طبية للاستشارة الأولى.',
+    'faq-q4': 'ما هي الأمراض التي يعالجها الدكتور ؟',
+    'faq-a4': 'أمراض الكلى والمثانة، أمراض البروستاتا، العقم الذكوري، الاضطرابات الجنسية، وسائر أمراض الجهاز البولي.',
+    'faq-q5': 'هل الاستشارات سرية ؟',
+    'faq-a5': 'نعم تماماً. جميع الاستشارات تتم في إطار من السرية المهنية الكاملة، خاصة للحالات الحساسة.',
+    'contact-tag': 'التواصل والمواعيد', 'contact-h2': 'احجز موعدك',
+    'hours-ttl': '⏰ مواعيد الاستشارة', 'closed': 'مغلق',
+    'lbl-phone': 'الهاتف', 'lbl-addr': 'العنوان',
+    'val-addr': 'شارع جان جاك روسو<br>سيدي بلعباس 22002',
+    'lbl-rdv': 'الحجز', 'val-rdv': 'عبر الهاتف فقط',
+    'cta-call': 'اتصل الآن', 'cta-wa': 'واتساب',
+    'map-open': 'فتح الخريطة',
+    'fl1': 'التخصصات', 'fl2': 'عن الطبيب', 'fl3-faq': 'الأسئلة', 'fl3': 'التواصل',
+    'foot-copy': '© 2026 عيادة د. شيهاوي · جميع الحقوق محفوظة',
+  }
+};
+
+const DAYS_FR = ['Samedi','Dimanche','Lundi','Mardi','Mercredi','Jeudi','Vendredi'];
+const DAYS_AR = ['السبت','الأحد','الاثنين','الثلاثاء','الأربعاء','الخميس','الجمعة'];
+let lang = 'fr';
+
+function applyLang(l) {
+  lang = l;
+  const t = T[l];
+  document.documentElement.lang = l;
+  document.documentElement.dir  = l === 'ar' ? 'rtl' : 'ltr';
+  document.body.classList.toggle('ar', l === 'ar');
+  document.getElementById('langBtn').textContent = l === 'ar' ? 'FR' : 'عربي';
+  for (const [k, v] of Object.entries(t)) {
+    const el = document.getElementById('t-' + k);
+    if (el) el.innerHTML = v;
+  }
+  document.querySelectorAll('.hr-day-0,.hr-day-1,.hr-day-2,.hr-day-3,.hr-day-4,.hr-day-5,.hr-day-6').forEach((el, i) => {
+    el.textContent = l === 'ar' ? DAYS_AR[i] : DAYS_FR[i];
+  });
+}
+function toggleLang() { applyLang(lang === 'fr' ? 'ar' : 'fr'); }
+
+/* ─── FAQ ─── */
+function toggleFaq(btn) {
+  const item = btn.closest('.faq-item');
+  const isOpen = item.classList.contains('open');
+  document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open'));
+  if (!isOpen) item.classList.add('open');
+}
+
+/* ─── SCROLL ─── */
+window.addEventListener('scroll', () => {
+  document.getElementById('nav').classList.toggle('scrolled', scrollY > 50);
+  document.getElementById('scrollTop').classList.toggle('vis', scrollY > 300);
+});
+
+/* ─── MOBILE MENU ─── */
+function openMenu()  { document.getElementById('navLinks').classList.add('open'); document.querySelector('.nav-close-btn').style.display='block'; }
+function closeMenu() { document.getElementById('navLinks').classList.remove('open'); document.querySelector('.nav-close-btn').style.display='none'; }
+
+/* ─── REVEAL ─── */
+const ro = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('vis'); ro.unobserve(e.target); }});
+}, { threshold: 0.08 });
+document.querySelectorAll('.reveal').forEach(el => ro.observe(el));
+</script>
+</body>
+</html>
